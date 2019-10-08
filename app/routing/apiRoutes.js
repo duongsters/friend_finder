@@ -21,13 +21,11 @@ module.exports = function (app) {
             // then push the json the user sent to the friends Data array 
             scoresArray.push(scoresDiff);
         }
-        // find best match after comparision with all friends of the array index
         for (var i = 0; i < scoresArray.length; i++) {
             if (scoresArray[i] <= scoresArray[bestMatch]) {
                 bestMatch = i;
             }
         }
-        //returned data will then be pushed back to the array index
         var yourMatch = friendArr[bestMatch];
         res.json(yourMatch);
         friendArr.push(req.body);
