@@ -188,6 +188,13 @@
                     ]
                 };
                 console.log(newFriend);
+                //get the location of the home page.
+                var currentURL = window.location.origin;
+                //AJAX posts method of the data to friends API
+                    $.post(currentURL + "/api/friends", newFriend, function (data) {
+                    $("#nameAlign").text(data.name);
+                    $("#picAlign").attr("src", data.pic);
+                    console.log(data);
 
 
 </script>
