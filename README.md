@@ -1,12 +1,13 @@
 # Assignment: Friend Finder
 
-![Screenshot](app/images/Screenshot.png)
+![gif](app/images/Screenshot2.gif)
 
 ## Summary:
 Friend Finder is an application I created that  implements friend-matching logically based on the user/admin's responses to a random ten question survey. The user/admin would be able to answer the 10 questions by choosing answers choices ranging from 1--Strongly Disagree, to 5--Strongly Agree. When the survey is finished and submitted, the application will compare their answer values to an already-existing index scoring that would match closest to the user/admin's responding values within the survey. The closest set of user responses is defined as the set with the lowest absolute difference for all ten questions combined.
 
 The Friend Finder application is meant to simulate a simple dating app of matching users with similar key element values. Friend Finder mainly is implemented by use of Node.js and Express JS within the back-end of the application and the Materialize & BootStrap CSS technologies on the front-end of things.
 
+![Screenshot](app/images/Screenshot3.png)
 
 ## Getting Started:
 (1) Clone friend_finder repository via https://github.com/duongsters/friend_finder
