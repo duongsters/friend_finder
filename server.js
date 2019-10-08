@@ -13,3 +13,8 @@ app.use(express.json());
 //These 2 route files will direct the server in how to respond to user's GET and REQUEST data
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlROutes")(app);
+
+//Lister that will start running the server port
+app.listen(PORT, function(){
+    console.log("Friend Finder is listening on PORT: " + PORT)
+})
