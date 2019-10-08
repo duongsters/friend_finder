@@ -16,3 +16,6 @@ var friendArr = [
         ]
     }
 ];
+
+//connecting friendsArr index for the other files to use
+module.exports = friendArr;
